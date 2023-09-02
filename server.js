@@ -5,6 +5,8 @@ import bodyParser from "body-parser";
 app.use(bodyParser.json());
 const PORT = process.env.PORT || 5000;
 import userModel from "./modal.js";
+import cors from 'cors';
+app.use(cors());
 
 const connectDB = async () => {
   try {
